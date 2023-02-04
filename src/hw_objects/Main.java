@@ -3,9 +3,11 @@ package hw_objects;
 public class Main {
 
     public static void main(String[] args) {
-        Author lev = new Author("Lev", "Tolstoy");
-        Book book1 = new Book("nakazanie", lev, 1975);
-
+        Author levTolstoy = new Author("Lev", "Tolstoy");
+        Author fedorDostoevskiy = new Author("Fedor", "Dostoevskiy");
+        Book idiot = new Book ("Idiot", fedorDostoevskiy, 1852);
+        Book besy = new Book ("Besy", fedorDostoevskiy, 1850);
+        idiot.setYear(1860);
 
     }
 }
